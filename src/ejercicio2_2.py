@@ -1,11 +1,15 @@
 def password(code: str):
     varcon = code.lower()
-    con = input("Introduce la contraseña: ")
+    con = recibPassword()
     con = con.lower()
     if (varcon == con):
         return "La contraseña introducida coincide con la contraseña guardada."
     else:
         return "La contraseña introducida no coincide con la contraseña guardada."
+    
+def recibPassword():
+    cont = input("Introduce la contraseña: ")
+    return cont
 
 def main():
     contra = input("Introduce una contraseña para guardar: ")

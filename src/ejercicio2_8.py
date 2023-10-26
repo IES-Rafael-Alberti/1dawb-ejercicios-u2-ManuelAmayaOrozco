@@ -1,11 +1,14 @@
 def rendimiento(niv: float):
     din = 2400 * niv
     if(niv <= 0.3 ):
-        return "Nivel inaceptable, recibirá una paga de {din}€.".format(din = din)
+        print("Nivel inaceptable, recibirá una paga de {din}€.".format(din = din))
+        return din
     elif(0.4 <= niv <= 0.5):
-        return "Nivel aceptable, recibirá una paga de {din}€.".format(din = din)
+        print("Nivel aceptable, recibirá una paga de {din}€.".format(din = din))
+        return din
     else:
-        return "Nivel meritorio, recibirá una paga de {din}€.".format (din = din)
+        print("Nivel meritorio, recibirá una paga de {din}€.".format(din = din))
+        return din
     
 def main():
     punt = float(input("Dime tu puntuación de rendimiento: "))
