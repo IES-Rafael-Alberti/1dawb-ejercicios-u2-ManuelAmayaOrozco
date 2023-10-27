@@ -11,7 +11,10 @@ def asiggrupo(nom: str, sex: int):
     
 def main():
     nombre = input("Dime tu nombre: ")
-    sexo = int(input("¿Eres hombre o mujer? (Escribe solo 1 para Hombre o 2 para Mujer): "))
+    sexo = 0
+    while(sexo != 1 and sexo != 2):
+        sexo = int(input("¿Eres hombre o mujer? (Escribe solo 1 para Hombre o 2 para Mujer): "))
     print(asiggrupo(nombre, sexo))
-    if __name__ == '__main__':
-        main()
+    
+if __name__ == '__main__':
+    main()

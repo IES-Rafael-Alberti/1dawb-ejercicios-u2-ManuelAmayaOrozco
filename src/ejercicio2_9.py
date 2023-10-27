@@ -9,5 +9,7 @@ def precio(ed: int):
 def main():  
     edad = int(input("Dime tu edad: "))
     print(precio(edad))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+     main()

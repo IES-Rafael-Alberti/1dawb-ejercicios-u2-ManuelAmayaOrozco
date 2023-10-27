@@ -17,5 +17,7 @@ def cuentImpar(num: int):
 def main():
     numer = int(input("Dime un número entero positivo: "))
     print(cuentImpar(numer))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+    main()

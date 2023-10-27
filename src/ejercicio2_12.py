@@ -8,5 +8,7 @@ def cuentEdad(ed: int):
 def main():
     edad = int(input("Dime tu edad: "))
     print(cuentEdad(edad))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+     main()

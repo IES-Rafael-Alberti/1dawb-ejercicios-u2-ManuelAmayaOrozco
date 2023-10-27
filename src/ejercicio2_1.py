@@ -7,5 +7,7 @@ def edad(ed: int):
 def main():
     años = int(input("Dime tu edad: "))
     print(edad(años))
-    if __name__ == '__main__':
-        main()
+    
+
+if __name__ == '__main__':
+     main()

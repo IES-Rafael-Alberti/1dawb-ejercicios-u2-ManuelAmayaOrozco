@@ -1,18 +1,22 @@
-def password(code: str):
-    varcon = code.lower()
-    con = recibPassword()
-    con = con.lower()
-    if (varcon == con):
-        return "La contraseña introducida coincide con la contraseña guardada."
+def tPassword(password: str):
+    passOrig = "contraseña"
+    if password.replace(" ", "").lower() == passOrig:
+        return True
     else:
-        return "La contraseña introducida no coincide con la contraseña guardada."
-    
-def recibPassword():
-    cont = input("Introduce la contraseña: ")
-    return cont
+        return False
+
+
+def getPassword():
+    return input("Introduce una contraseña: ")
+
 
 def main():
-    contra = input("Introduce una contraseña para guardar: ")
-    print(password(contra))
-    if __name__ == '__main__':
-        main()
+    password = getPassword()
+    if tPassword(password):
+        print("Has acertado.")
+    else:
+        print("Has fallado.")
+    
+    
+if __name__ == '__main__':
+     main()

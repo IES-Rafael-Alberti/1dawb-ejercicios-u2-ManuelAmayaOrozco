@@ -9,5 +9,7 @@ def main():
     num1 = int(input("Dime un número: "))
     num2 = int(input("Dime otro número: "))
     print(division(num1, num2))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+    main()

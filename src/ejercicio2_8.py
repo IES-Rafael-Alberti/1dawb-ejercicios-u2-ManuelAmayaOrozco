@@ -9,9 +9,12 @@ def rendimiento(niv: float):
     else:
         print("Nivel meritorio, recibirá una paga de {din}€.".format(din = din))
         return din
-    
+
+
 def main():
     punt = float(input("Dime tu puntuación de rendimiento: "))
     print(rendimiento(punt))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+    main()

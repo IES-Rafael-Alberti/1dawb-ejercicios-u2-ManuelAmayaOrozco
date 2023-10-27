@@ -8,5 +8,6 @@ def paridad(n: int):
 def main():    
     num = int(input("Dime un número: "))
     print(paridad(num))
-    if __name__ == '__main__':
-        main()
+    
+if __name__ == '__main__':
+     main()

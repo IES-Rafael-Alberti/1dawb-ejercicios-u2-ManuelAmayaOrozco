@@ -1,13 +1,13 @@
 import pytest
-from src.ejercicio2_2 import password
+from src.ejercicio2_2 import tPassword
 
 @pytest.mark.parametrize(
   "input_n1, expected",
     [
-      ("holakase", "La contraseña introducida coincide con la contraseña guardada."),
-      ("contraseña", "La contraseña introducida no coincide con la contraseña guardada."),
-      ("waswas", "La contraseña introducida coincide con la contraseña guardada.")
+      ("holakase", False),
+      ("contraseña", True),
+      ("waswas", False)
     ] 
 )
-def test_password_params(input_n1, expected):
-    assert password(input_n1) == expected
+def test_tPassword_params(input_n1, expected):
+    assert tPassword(input_n1) == expected

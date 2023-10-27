@@ -23,5 +23,6 @@ def elecIngred():
 def main():
     eleccion = input("¿Quieres que tu pizza sea vegetariana? (V para Vegetariana, N para Normal): ")
     print(pizzatime(eleccion))
-    if __name__ == '__main__':
-        main()
+    
+if __name__ == '__main__':
+     main()

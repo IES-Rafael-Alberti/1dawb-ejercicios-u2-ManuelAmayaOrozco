@@ -8,5 +8,6 @@ def main():
     edad = int(input("Dime tu edad: "))
     ing = int(input("Dime tus ingresos mensuales en euros: "))
     print(tributar(edad, ing))
-    if __name__ == '__main__':
-        main()
+    
+if __name__ == '__main__':
+     main()

@@ -7,5 +7,7 @@ def asterTriangulo(num: int):
 def main():
     number = int(input("Dime un número: "))
     print(asterTriangulo(number))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+    main()

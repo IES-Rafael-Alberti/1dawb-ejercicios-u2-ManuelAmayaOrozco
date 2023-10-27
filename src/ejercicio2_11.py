@@ -8,5 +8,7 @@ def repPalabra(word: str):
 def main():    
     pal = input("Dime una palabra: ")
     print(repPalabra(pal))
-    if __name__ == '__main__':
-        main()
+    
+    
+if __name__ == '__main__':
+     main()
