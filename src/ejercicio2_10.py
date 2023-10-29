@@ -1,27 +1,24 @@
 def pizzatime(elec: str):
     if (elec == "V"):
-        ing = elecIngredveg()
-        print("Su pizza vegetariana lleva: Mozzarella, Tomate, {ing}.".format(ing = ing))
         return "V"
     else:
-        ing = elecIngred()
-        if (ing == "Pimiento" or ing == "Tofu"):
-            print("Su pizza vegetariana lleva: Mozzarella, Tomate, {ing}.".format(ing = ing))
-            return "V"
-        else:
-            print("Su pizza vegetariana lleva: Mozzarella, Tomate, {ing}.".format(ing = ing))
-            return "N"
+        return "N"
     
 def elecIngredveg():
     ingr = input("Elige un ingrediente (Pimiento, Tofu): ")
-    return ingr
+    print("Su pizza vegetariana lleva: Mozzarella, Tomate, {ingr}.".format(ingr = ingr))
+
 
 def elecIngred():
     ingr = input("Elige un ingrediente (Peperoni, Jamón, Salmón, Pimiento, Tofu): ")
-    return ingr
+    print("Su pizza lleva: Mozzarella, Tomate, {ingr}.".format(ingr = ingr))
 
 def main():
     eleccion = input("¿Quieres que tu pizza sea vegetariana? (V para Vegetariana, N para Normal): ")
+    if (eleccion == "V"):
+        print(elecIngredveg())
+    else:
+        print(elecIngred())
     print(pizzatime(eleccion))
     
 if __name__ == '__main__':
