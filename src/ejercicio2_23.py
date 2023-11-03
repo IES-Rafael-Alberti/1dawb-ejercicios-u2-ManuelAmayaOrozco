@@ -1,3 +1,7 @@
+"""
+No tiene test ya que repite inputs constantemente
+"""
+
 def echoPhrase(phrase: str):
     sent = phrase
     while (phrase != "salir"):
