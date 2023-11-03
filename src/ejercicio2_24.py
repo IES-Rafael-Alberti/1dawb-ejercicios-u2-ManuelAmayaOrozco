@@ -1,8 +1,8 @@
 def sumatorNum(num: int):
-    sum = num
+    sum = 0
     while(num != 0):
-        num = recibNum()
         sum += num
+        num = recibNum()
     return "La suma final es {sum}".format(sum = sum)
 
 

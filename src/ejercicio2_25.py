@@ -2,11 +2,11 @@ from ejercicio2_24 import recibNum
 
 
 def sumatorNumPos(num: int):
-    sum = num
+    sum = 0
     while(num != 0):
-        num = recibNum()
         if(num > 0):
             sum += num
+        num = recibNum()
     return "La suma final es {sum}".format(sum = sum)
 
 

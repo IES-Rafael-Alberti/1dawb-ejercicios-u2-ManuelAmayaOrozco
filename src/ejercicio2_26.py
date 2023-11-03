@@ -4,9 +4,9 @@ from ejercicio2_24 import recibNum
 def mayorNum(num: int):
     mayor = num
     while(num != 0):
-        num = recibNum()
         if(num > mayor):
             mayor = num
+        num = recibNum()
     return "El mayor número introducido es {mayor}".format(mayor = mayor)
 
 
