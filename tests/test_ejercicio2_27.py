@@ -9,5 +9,5 @@ from src.ejercicio2_27 import sumDigs
       (456, "La suma de los dígitos es 15")
     ] 
 )
-def test_tablasMultiplicar_params(input_n1, expected):
+def test_sumDigs_params(input_n1, expected):
     assert sumDigs(input_n1) == expected

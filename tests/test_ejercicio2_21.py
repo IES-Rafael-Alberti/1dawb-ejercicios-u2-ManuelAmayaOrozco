@@ -9,5 +9,5 @@ from src.ejercicio2_21 import letraPalab
       ("aguacate", "")
     ] 
 )
-def test_tablasMultiplicar_params(input_n1, expected):
+def test_letraPalab_params(input_n1, expected):
     assert letraPalab(input_n1) == expected
