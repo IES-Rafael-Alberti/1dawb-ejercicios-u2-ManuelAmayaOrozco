@@ -1,3 +1,9 @@
+"""
+Ejercicio 2.2.7
+Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
+"""
+
+
 def tablasMultiplicar(number: int):
     for i in range(0, 10):
         res = number * i

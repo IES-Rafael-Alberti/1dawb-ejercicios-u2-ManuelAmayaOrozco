@@ -1,3 +1,10 @@
+"""
+Ejercicio 2.2.3
+Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos
+los números impares desde 1 hasta ese número separados por comas.
+"""
+
+
 def cuentImpar(num: int):
     i = 1
     ser = "{i}, ".format(i = i)
@@ -13,6 +20,7 @@ def cuentImpar(num: int):
             ser = ser + "{i}, ".format(i = i)
         ser = ser + "{fin}".format(fin = num)
         return ser
+
 
 def main():
     numer = int(input("Dime un número entero positivo: "))
